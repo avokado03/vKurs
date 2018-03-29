@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Hotel.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=HZ-ПК\;Initial Catalog=hotel;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MainColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">9, 56, 82</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="AccientColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">23, 88, 144</Value>
+    </Setting>
+    <Setting Name="AddColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">152, 156, 157</Value>
+    </Setting>
+    <Setting Name="HeaderFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Verdana, 36pt</Value>
+    </Setting>
+    <Setting Name="AccientFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Book Antiqua, 21.75pt, style=Italic</Value>
+    </Setting>
+    <Setting Name="MainFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Verdana, 18pt</Value>
+    </Setting>
+    <Setting Name="TransparentColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Transparent</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
