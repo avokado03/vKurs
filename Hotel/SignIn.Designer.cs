@@ -152,6 +152,7 @@
             this.signInButton.TabIndex = 12;
             this.signInButton.Text = "Вход";
             this.signInButton.UseVisualStyleBackColor = false;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // buttonBack
             // 
@@ -169,6 +170,7 @@
             this.buttonBack.TabIndex = 13;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // SignIn
             // 

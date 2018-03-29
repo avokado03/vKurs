@@ -154,6 +154,7 @@
             this.signUpButton.TabIndex = 12;
             this.signUpButton.Text = "Регистрация";
             this.signUpButton.UseVisualStyleBackColor = false;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // buttonBack
             // 
@@ -171,6 +172,7 @@
             this.buttonBack.TabIndex = 13;
             this.buttonBack.Text = "Назад";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // textBoxName
             // 
