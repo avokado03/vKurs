@@ -29,5 +29,8 @@
     <Setting Name="TransparentColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">Transparent</Value>
     </Setting>
+    <Setting Name="FormSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">784, 534</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -83,6 +83,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ic_hotel_128_28520.ico" />
+    <None Include="Resources\1111.png" />
     <None Include="Resources\ic_hotel_128_28520.ico" />
     <None Include="Resources\krestik.png" />
     <None Include="Resources\linia.png" />

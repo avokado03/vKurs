@@ -13,6 +13,6 @@ namespace Hotel
             MainForm.ActiveForm.Hide();
             fOpen.ShowDialog();
             fClose.Close();
-        } 
+        }
     }
 }
