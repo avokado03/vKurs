@@ -23,5 +23,18 @@ namespace Hotel
             Properties.Settings.Default.role = "";
             GoToForm(new SignIn(), f);
         }
+        //дизайн dataGridView
+        static public void SetDgvStyle(DataGridView d) {
+            for (int i = 0; i < d.RowCount; i++) {
+                if (i % 2 == 0)
+                {
+                    for (int j = 0; j < d.Rows[i].Cells.Count; j++)
+                    {
+                        d.Rows[i].Cells[j].Style.BackColor = System.Drawing.Color.LightBlue;
+                    }
+                }
+            }
+        }
+
     }
 }

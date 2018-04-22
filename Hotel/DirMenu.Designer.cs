@@ -33,7 +33,6 @@
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.addRoomButton = new System.Windows.Forms.Button();
-            this.editRoomButton = new System.Windows.Forms.Button();
             this.reportButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
@@ -91,23 +90,7 @@
             this.addRoomButton.TabIndex = 13;
             this.addRoomButton.Text = "Добавить комнату";
             this.addRoomButton.UseVisualStyleBackColor = false;
-            // 
-            // editRoomButton
-            // 
-            this.editRoomButton.BackColor = global::Hotel.Properties.Settings.Default.AccientColor;
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::Hotel.Properties.Settings.Default, "AccientColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Hotel.Properties.Settings.Default, "MainFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::Hotel.Properties.Settings.Default, "FontColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.FlatAppearance.BorderSize = 0;
-            this.editRoomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editRoomButton.Font = global::Hotel.Properties.Settings.Default.MainFont;
-            this.editRoomButton.ForeColor = global::Hotel.Properties.Settings.Default.FontColor;
-            this.editRoomButton.Location = new System.Drawing.Point(12, 147);
-            this.editRoomButton.Name = "editRoomButton";
-            this.editRoomButton.Size = new System.Drawing.Size(360, 73);
-            this.editRoomButton.TabIndex = 14;
-            this.editRoomButton.Text = "Редактирование информации о комнате\r\n";
-            this.editRoomButton.UseVisualStyleBackColor = false;
+            this.addRoomButton.Click += new System.EventHandler(this.addRoomButton_Click);
             // 
             // reportButton
             // 
@@ -119,12 +102,13 @@
             this.reportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reportButton.Font = global::Hotel.Properties.Settings.Default.MainFont;
             this.reportButton.ForeColor = global::Hotel.Properties.Settings.Default.FontColor;
-            this.reportButton.Location = new System.Drawing.Point(12, 233);
+            this.reportButton.Location = new System.Drawing.Point(12, 189);
             this.reportButton.Name = "reportButton";
             this.reportButton.Size = new System.Drawing.Size(360, 42);
             this.reportButton.TabIndex = 15;
             this.reportButton.Text = "Отчет о выручке";
             this.reportButton.UseVisualStyleBackColor = false;
+            this.reportButton.Click += new System.EventHandler(this.reportButton_Click);
             // 
             // exitButton
             // 
@@ -154,7 +138,6 @@
             this.ClientSize = new System.Drawing.Size(384, 362);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.reportButton);
-            this.Controls.Add(this.editRoomButton);
             this.Controls.Add(this.addRoomButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxHide);
@@ -181,7 +164,6 @@
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addRoomButton;
-        private System.Windows.Forms.Button editRoomButton;
         private System.Windows.Forms.Button reportButton;
         private System.Windows.Forms.Button exitButton;
     }

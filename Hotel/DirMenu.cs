@@ -38,5 +38,16 @@ namespace Hotel
         {
             BehaviorLib.ExitFromSystem(this);
         }
+        //переход к форме создания комнаты
+        private void addRoomButton_Click(object sender, EventArgs e)
+        {
+            BehaviorLib.GoToForm(new AddRoom(), this);
+        }
+
+        //переход на форму отчета
+        private void reportButton_Click(object sender, EventArgs e)
+        {
+            BehaviorLib.GoToForm(new Report(), this);
+        }
     }
 }

@@ -29,33 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdmMenu));
-            this.reportButton = new System.Windows.Forms.Button();
             this.addRoomButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.editRoomButton = new System.Windows.Forms.Button();
+            this.regClientButton = new System.Windows.Forms.Button();
             this.pictureBoxHide = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // reportButton
-            // 
-            this.reportButton.BackColor = global::Hotel.Properties.Settings.Default.AccientColor;
-            this.reportButton.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::Hotel.Properties.Settings.Default, "AccientColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.reportButton.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Hotel.Properties.Settings.Default, "MainFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.reportButton.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::Hotel.Properties.Settings.Default, "FontColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.reportButton.FlatAppearance.BorderSize = 0;
-            this.reportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reportButton.Font = global::Hotel.Properties.Settings.Default.MainFont;
-            this.reportButton.ForeColor = global::Hotel.Properties.Settings.Default.FontColor;
-            this.reportButton.Location = new System.Drawing.Point(12, 228);
-            this.reportButton.Name = "reportButton";
-            this.reportButton.Size = new System.Drawing.Size(360, 42);
-            this.reportButton.TabIndex = 19;
-            this.reportButton.Text = "Отчет о бронях за период";
-            this.reportButton.UseVisualStyleBackColor = false;
             // 
             // addRoomButton
             // 
@@ -73,6 +55,7 @@
             this.addRoomButton.TabIndex = 17;
             this.addRoomButton.Text = "Добавить постояльца";
             this.addRoomButton.UseVisualStyleBackColor = false;
+            this.addRoomButton.Click += new System.EventHandler(this.addRoomButton_Click);
             // 
             // label1
             // 
@@ -88,22 +71,23 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Меню администратора гостиницы";
             // 
-            // editRoomButton
+            // regClientButton
             // 
-            this.editRoomButton.BackColor = global::Hotel.Properties.Settings.Default.AccientColor;
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::Hotel.Properties.Settings.Default, "AccientColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Hotel.Properties.Settings.Default, "MainFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::Hotel.Properties.Settings.Default, "FontColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.editRoomButton.FlatAppearance.BorderSize = 0;
-            this.editRoomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editRoomButton.Font = global::Hotel.Properties.Settings.Default.MainFont;
-            this.editRoomButton.ForeColor = global::Hotel.Properties.Settings.Default.FontColor;
-            this.editRoomButton.Location = new System.Drawing.Point(12, 163);
-            this.editRoomButton.Name = "editRoomButton";
-            this.editRoomButton.Size = new System.Drawing.Size(360, 42);
-            this.editRoomButton.TabIndex = 18;
-            this.editRoomButton.Text = "Регистрация постояльца";
-            this.editRoomButton.UseVisualStyleBackColor = false;
+            this.regClientButton.BackColor = global::Hotel.Properties.Settings.Default.AccientColor;
+            this.regClientButton.DataBindings.Add(new System.Windows.Forms.Binding("BackColor", global::Hotel.Properties.Settings.Default, "AccientColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.regClientButton.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Hotel.Properties.Settings.Default, "MainFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.regClientButton.DataBindings.Add(new System.Windows.Forms.Binding("ForeColor", global::Hotel.Properties.Settings.Default, "FontColor", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.regClientButton.FlatAppearance.BorderSize = 0;
+            this.regClientButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.regClientButton.Font = global::Hotel.Properties.Settings.Default.MainFont;
+            this.regClientButton.ForeColor = global::Hotel.Properties.Settings.Default.FontColor;
+            this.regClientButton.Location = new System.Drawing.Point(14, 192);
+            this.regClientButton.Name = "regClientButton";
+            this.regClientButton.Size = new System.Drawing.Size(360, 42);
+            this.regClientButton.TabIndex = 18;
+            this.regClientButton.Text = "Регистрация постояльца";
+            this.regClientButton.UseVisualStyleBackColor = false;
+            this.regClientButton.Click += new System.EventHandler(this.editRoomButton_Click);
             // 
             // pictureBoxHide
             // 
@@ -155,8 +139,7 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.pictureBoxHide);
             this.Controls.Add(this.pictureBoxClose);
-            this.Controls.Add(this.reportButton);
-            this.Controls.Add(this.editRoomButton);
+            this.Controls.Add(this.regClientButton);
             this.Controls.Add(this.addRoomButton);
             this.Controls.Add(this.label1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Font", global::Hotel.Properties.Settings.Default, "MainFont", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -179,11 +162,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button reportButton;
         private System.Windows.Forms.Button addRoomButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button editRoomButton;
+        private System.Windows.Forms.Button regClientButton;
         private System.Windows.Forms.PictureBox pictureBoxHide;
         private System.Windows.Forms.PictureBox pictureBoxClose;
         private System.Windows.Forms.Button exitButton;
